@@ -1,0 +1,11 @@
+replicaCount: 2
+
+image:
+  repository: 975050003646.dkr.ecr.ap-south-1.amazonaws.com/demo
+  tag: latest
+  pullPolicy: IfNotPresent
+
+service:
+  type: LoadBalancer
+  port: 80
+  targetPort: 5000
